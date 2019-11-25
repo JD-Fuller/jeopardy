@@ -20,16 +20,22 @@
     </header>
 <main class="container-fluid h-100 bg-secondary text-white">
     <div class="row">
+         <!-- Not sure if needs to be capital QuestionController or lower case...same with answer-->
+    <form class="col-6 text-left p-3" onsubmit="app.answerController.addAnswer(event)">
         <div class="answer" id="answer">
             <!-- This is where Answer data will go-->
             <h2>Answer</h2>
             <span>Lorem ipsum dolor sit amet.d</span>
         </div>
+    </form>
+    <!-- Not sure if needs to be capital QuestionController or lower case...same with answer-->
+    <form class="col-6 text-left p-3" onsubmit="app.questionController.addQuestion(event)">
         <div class="question" id="question">
              <!-- This is where question data will go-->
             <h2>Question</h2>
             <span>What is...</span>
         </div>
+    </form>
     </div>
 </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
